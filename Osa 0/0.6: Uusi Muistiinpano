@@ -1,0 +1,16 @@
+title 0.6: Uusi Muistiinpano
+
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over palvelin:
+HTTP GET-pyyntö kertoo palvelimelle
+pyynnön mukana tulleen datan olevan
+JSON-muodossa, sisältäen arvot 
+content ja date.
+end note
+palvelin --> selain: Status Code 201 (Created)
+note left of palvelin:
+Palvelin ei pyydä uudelleenohjausta
+SPA-versiossa, vaan selain pysyy
+samalla sivulla, eikä muita HTTP
+pyyntöjä suoriteta.
+end note
